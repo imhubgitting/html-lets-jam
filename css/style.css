@@ -32,69 +32,98 @@ a {
 a:hover {
   color: #b34d12;
 }
-.text-area {
-  /*
-  border: 5px red solid;
-  
-  border-width: 3px;
-  border-bottom-width: 10px;
-  */
 
-  width: 100%;
-}
-.features {
+.features,
+.how-it-works,
+.join-our-community {
   background-color: #ffffff;
   color: #304b7a;
-  /*
-  border: 5px red solid;
-  
-  border-width: 3px;
-  border-bottom-width: 10px;
-  */
   padding: 10px;
+
   width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-.features h3 {
+.features {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.features h2,
+.how-it-works h2,
+.join-our-community h2 {
   font-family: "Tahoma";
   text-align: center;
+  font-size: 30px;
   padding: 20px;
   border: 10px;
 }
-.how-it-works {
-  background-color: #fcf8f3;
-  color: #304b7a;
-  /*
-  border: 5px red solid;
-  
-  border-width: 3px;
-  border-bottom-width: 10px;
-  */
-  padding: 10px;
-  width: 100%;
-}
-.how-it-works h3 {
-  font-family: "Tahoma";
-  text-align: center;
-  padding: 20px;
-  border: 10px;
-}
-.join-our-community {
-  background-color: #304b7a;
-  color: #ffffff;
-  /*
-  border: 5px red solid;
-  
-  border-width: 3px;
-  border-bottom-width: 10px;
-  */
-  padding: 10px;
-  width: 100%;
-}
+.features h3,
+.how-it-works h3,
 .join-our-community h3 {
   font-family: "Tahoma";
   text-align: center;
   padding: 20px;
   border: 10px;
+}
+.features p,
+.how-it-works p,
+.join-our-community p {
+  font-family: "Tahoma";
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+.features .block,
+.how-it-works .block,
+.join-our-community .block {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  list-style: none;
+}
+.features .block {
+  background-color: #fcf8f3;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 22.2%;
+  border-radius: 10px;
+}
+.how-it-works {
+  background-color: #fcf8f3;
+  color: #304b7a;
+}
+.how-it-works h2 {
+  font-family: "Tahoma";
+}
+.how-it-works h3 {
+  font-family: "Tahoma";
+}
+
+.how-it-works small {
+  font-family: "Tahoma";
+}
+.how-it-works .block {
+  width: 33.3%;
+}
+
+.join-our-community {
+  background-color: #304b7a;
+  color: #ffffff;
+}
+.join-our-community h3 {
+  font-family: "Tahoma";
+  color: #cb5615;
+  font-size: xx-large;
+  margin: 0;
+}
+.join-our-community p {
+  margin: 0;
+}
+.join-our-community .block {
+  width: 33.3%;
 }
 .ready-to-jam {
   background-color: #ffffff;
