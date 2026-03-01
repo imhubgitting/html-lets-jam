@@ -2,14 +2,14 @@ body {
   background-color: #fcf8f3;
   color: #304b7a;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: normal;
   line-height: 1.6em;
   margin: 0;
 }
 #main-header {
   text-align: center;
-  background-color: black;
+  background-color: #333;
   color: white;
   padding: 10px;
 }
@@ -17,129 +17,210 @@ body {
   background-color: #304b7a;
   color: #ffffff;
   text-align: center;
-  font-size: 18px;
+  font-size: 12px;
   padding: 10px;
   width: 100%;
 }
+#navbar {
+  background-color: #fcf8f3;
+  border-bottom: 3px solid#cb5615;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .title {
+  padding-left: 30px;
+  color: #cb5615;
+}
+#navbar .links {
+  flex: 1;
+  color: #000;
+}
+#navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+#navbar a:hover {
+  color: #b34d12;
+}
+#navbar .profile {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#navbar .profile .signup {
+  background: #cb5615;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2px 6px;
+}
+#navbar .profile .signup:hover {
+  color: #000;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#navbar li {
+  display: inline;
+}
+
 .container {
   width: 80%;
   margin: auto;
+  overflow: hidden;
 }
-a {
-  text-decoration: none;
-  color: #cb5615;
-}
+
 a:hover {
   color: #b34d12;
 }
-
+/* === Shared Section Styles === */
+.welcome,
 .features,
 .how-it-works,
-.join-our-community {
-  background-color: #ffffff;
-  color: #304b7a;
-  padding: 10px;
-
-  width: 100%;
-  height: auto;
+.join-our-community,
+.ready-to-jam {
+  padding: 15px;
   box-sizing: border-box;
   overflow: hidden;
 }
-.features {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.welcome,
+.features .block-container,
+.how-it-works .block-container,
+.join-our-community .block-container,
+.ready-to-jam .block-container {
+  padding: 10px;
+  display: flex;
 }
+.welcome .block,
+.features .block,
+.how-it-works .block,
+.join-our-community .block,
+.ready-to-jam {
+  border-radius: 25px;
+  min-height: 100px;
+  flex: 1 1 0;
+  text-align: center;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding: 10px;
+}
+
 .features h2,
 .how-it-works h2,
-.join-our-community h2 {
+.join-our-community h2,
+.ready-to-jam h2 {
   font-family: "Tahoma";
   text-align: center;
-  font-size: 30px;
-  padding: 20px;
+  font-size: 15px;
   border: 10px;
 }
+
 .features h3,
 .how-it-works h3,
-.join-our-community h3 {
+.join-our-community h3,
+.ready-to-jam {
   font-family: "Tahoma";
   text-align: center;
-  padding: 20px;
   border: 10px;
 }
+.welcome p,
 .features p,
 .how-it-works p,
-.join-our-community p {
+.join-our-community p,
+.ready-to-jam p {
   font-family: "Tahoma";
   text-align: center;
   display: block;
-  padding: 20px;
 }
-.features .block,
-.how-it-works .block,
-.join-our-community .block {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  box-sizing: border-box;
-  list-style: none;
+
+/* === Features Only === */
+.features {
+  background-color: #ffffff;
+  color: #304b7a;
 }
 .features .block {
-  background-color: #fcf8f3;
-
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 22.2%;
-  border-radius: 10px;
+  background: #fcf8f3;
 }
+.features h3 {
+  padding: 20px;
+}
+
+/* === How It Works Only === */
 .how-it-works {
   background-color: #fcf8f3;
   color: #304b7a;
 }
-.how-it-works h2 {
-  font-family: "Tahoma";
-}
-.how-it-works h3 {
-  font-family: "Tahoma";
-}
-
-.how-it-works small {
-  font-family: "Tahoma";
+.how-it-works .block-container {
+  margin: 0;
 }
 .how-it-works .block {
-  width: 33.3%;
+  list-style: none;
+}
+.how-it-works h3 {
+  padding: 0px 20px 20px 20px;
+}
+.how-it-works p {
+  padding: 0px 20px 0px 20px;
 }
 
+/* === Join Our Community Only === */
 .join-our-community {
   background-color: #304b7a;
   color: #ffffff;
 }
-.join-our-community h3 {
-  font-family: "Tahoma";
-  color: #cb5615;
-  font-size: xx-large;
-  margin: 0;
-}
-.join-our-community p {
+.join-our-community .block-container {
   margin: 0;
 }
 .join-our-community .block {
-  width: 33.3%;
+  list-style: none;
 }
-.ready-to-jam {
-  background-color: #ffffff;
-  color: #304b7a;
-  /*
-  border: 5px red solid;
-  
-  border-width: 3px;
-  border-bottom-width: 10px;
-  */
-  padding: 10px;
-  width: 100%;
+.join-our-community h3 {
+  color: #cb5615;
+  padding: 0px 20px 20px 20px;
 }
-.ready-to-jam h3 {
+.join-our-community p {
+  padding: 0px 20px 0px 20px;
+}
+/* === Ready-To-Jam Only === */
+
+.welcome {
+  background-color: #304b7a;
+}
+.welcome .block {
+  padding-bottom: 10%;
+}
+.welcome h1 {
   font-family: "Tahoma";
   text-align: center;
-  padding: 20px;
-  border: 10px;
+  justify-content: center;
+  color: #fff;
+  padding-top: 10%;
+  font-size: 50px;
+}
+.welcome p {
+  color: #fff;
+  padding-bottom: 1%;
+  font-size: 12px;
+}
+.welcome a:hover {
+  color: #000;
+}
+.welcome a {
+  text-decoration: none;
+  background: #cb5615;
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-weight: 600;
 }
